@@ -59,11 +59,16 @@ h6 {
   letter-spacing: var(--mainSpacing);
   color: var(--mainBlack);
   background: var(--primaryColor);
+  margin-top: 0.2rem;
   padding: 0.4rem 0.9rem;
   border: 3px solid var(--primaryColor);
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: var(--mainTransition);
+  -moz-transition: var(--mainTransition);
+  -ms-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
 }
 .btn-primary:hover {
   background: transparent;
@@ -75,9 +80,11 @@ h6 {
   margin-top: 3rem;
 }
 .error {
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   margin: 2rem 0;
+  padding: 1rem;
 }
 .empty-search {
   text-align: center;

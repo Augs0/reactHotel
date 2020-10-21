@@ -5,7 +5,7 @@ import defaultImg from '../images/details-1.jpeg';
 
 export default function Room({ room }) {
 
-    const { name, type, images, price } = room;
+    const { name, slug, images, price } = room;
     return (
         <article className="room">
             <div className="img-container">
@@ -14,7 +14,7 @@ export default function Room({ room }) {
                     <p>${price}</p>
                     <p>per night</p>
                 </div>
-                <Link to={`/rooms/${type}`} className="btn-primary room-link">Features</Link>
+                <Link to={`/rooms/${slug}`} className="btn-primary room-link">Features</Link>
             </div>
             <p className="room-info">{name}</p>
         </article>

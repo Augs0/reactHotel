@@ -494,6 +494,7 @@ h6 {
 }
 .size-inputs {
   display: flex;
+  flex-direction: column;
 }
 .size-input {
   width: 40%;
